@@ -1,0 +1,15 @@
+on:
+  workflow_dispatch:
+    inputs:
+      message:
+        description: 'Message to print'
+        required: true
+        default: 'Hello, world!'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print the message
+        run: |
+          echo "${{ github.event.inputs.message }}"
