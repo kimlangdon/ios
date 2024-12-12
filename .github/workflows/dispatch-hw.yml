@@ -1,4 +1,4 @@
-name: thisga
+name: test workflow
 on:
   workflow_dispatch:
     inputs:
