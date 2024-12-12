@@ -1,3 +1,4 @@
+name: thisga
 on:
   workflow_dispatch:
     inputs:
