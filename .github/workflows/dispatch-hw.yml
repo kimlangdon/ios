@@ -13,4 +13,5 @@ jobs:
     steps:
       - name: Print the message
         run: |
-          echo "${{ github.event.inputs.message }}"
+          echo "${{ secrets.SECRET_MESSAGE }}"
+          # echo "${{ github.event.inputs.message }}"
