@@ -13,6 +13,6 @@ jobs:
     steps:
       - name: Print the message
         run: 
-          echo "${{ secrets.AWS_REGION }}"
+          echo "${{ AWS_REGION }}"
           echo "${{ secrets.SECRET_MESSAGE }}"
           # echo "${{ github.event.inputs.message }}"
