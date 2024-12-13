@@ -12,6 +12,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Print the message
-        run: |
+        run: 
+          echo "${{ variables.AWS_REGION }}"
           echo "${{ secrets.SECRET_MESSAGE }}"
           # echo "${{ github.event.inputs.message }}"
